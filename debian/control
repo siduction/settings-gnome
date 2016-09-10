@@ -1,0 +1,34 @@
+Source: whiteroom-gnome-settings
+Section: misc
+Priority: optional
+Maintainer: Alf Gaida <agaida@siduction.org>
+Uploaders: Torsten Wohlfarth <towo@siduction.org>,
+           Ovidiu Angelescu <convbsd@siduction.net>
+Build-Depends: debhelper (>= 9),
+               dh-systemd
+Standards-Version: 3.9.8
+Homepage: https://git.siduction.org/extra/settings-gnome
+Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
+Vcs-Browser: https://git.siduction.org/extra/settings-gnome.git
+
+# gnome Settings
+Package: whiteroom-gnome-settings
+Architecture: all
+Depends: ${misc:Depends},
+         whiteroom-common-settings
+Description: GNOME settings in installed mode
+ Pushes GNOME overrides schemas in installed mode
+
+Package: whiteroom-gnome-livesettings
+Architecture: all
+Depends: ${misc:Depends},
+         sidu-installer (>= 2014.01.10),
+         siduction-icons,
+         whiteroom-gnome-artwork,
+         whiteroom-gnome-settings,
+         whiteroom-common-livesettings,
+         whiteroom-sddm-livesettings
+         | whiteroom-ligthdm-gtk-livesettings
+         | whiteroom-gdm3-livesettings
+Description: GNOME settings in live mode
+ Pushes GNOME overrides schemas in live mode
