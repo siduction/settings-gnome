@@ -89,7 +89,7 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./template/usr/share/glib-2./schemas/installed/90_org.gnome.desktop.screensaver.wallpaper.gschema.override \
+    ./template/usr/share/glib-2.0/schemas/installed/90_org.gnome.desktop.screensaver.wallpaper.gschema.override \
     > ./usr/share/glib-2.0/schemas/installed/90_org.gnome.desktop.screensaver.wallpaper.gschema.override
 
 
