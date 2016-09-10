@@ -14,10 +14,10 @@ git checkout templates -- template
 [ -f ./debian/rules ] && ./bootstrap && echo 'Bootstrap first run ...'
 [ ! -f ./debian/rules ] && ./bootstrap && echo 'Bootstrap second run ...'
 
-#[ -f ./debian/rules ] && rm -f bootstrap
-#[ -f ./debian/rules ] && rm -rf debtemplate
-#[ -f ./debian/rules ] && rm -f functions.sh
-#[ -f ./debian/rules ] && rm -rf template
+[ -f ./debian/rules ] && rm -f bootstrap
+[ -f ./debian/rules ] && rm -rf debtemplate
+[ -f ./debian/rules ] && rm -f functions.sh
+[ -f ./debian/rules ] && rm -rf template
 
 
 [ ! -f ./debian/rules ] && echo 'Something went wrong, debian/rules not created! Check bootstrap!'
