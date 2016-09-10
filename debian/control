@@ -1,4 +1,4 @@
-Source: whiteroom-gnome-settings
+Source: patience-gnome-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -12,23 +12,23 @@ Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
 Vcs-Browser: https://git.siduction.org/extra/settings-gnome.git
 
 # gnome Settings
-Package: whiteroom-gnome-settings
+Package: patience-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
-         whiteroom-common-settings
+         patience-common-settings
 Description: GNOME settings in installed mode
  Pushes GNOME overrides schemas in installed mode
 
-Package: whiteroom-gnome-livesettings
+Package: patience-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          sidu-installer (>= 2014.01.10),
          siduction-icons,
-         whiteroom-gnome-artwork,
-         whiteroom-gnome-settings,
-         whiteroom-common-livesettings,
-         whiteroom-sddm-livesettings
-         | whiteroom-ligthdm-gtk-livesettings
-         | whiteroom-gdm3-livesettings
+         patience-gnome-artwork,
+         patience-gnome-settings,
+         patience-common-livesettings,
+         patience-sddm-livesettings
+         | patience-ligthdm-gtk-livesettings
+         | patience-gdm3-livesettings
 Description: GNOME settings in live mode
  Pushes GNOME overrides schemas in live mode
