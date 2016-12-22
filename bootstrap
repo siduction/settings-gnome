@@ -38,11 +38,6 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/settings.prerm \
-    > ./debian/${CODENAME_SAFE}-gnome-settings.prerm
-
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./debtemplate/livesettings.install \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.install
 
@@ -53,13 +48,19 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/livesettings.postinst \
+    > ./debian/${CODENAME_SAFE}-gnome-livesettings.postinst
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./debtemplate/livesettings.preinst \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.preinst
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/livesettings.postinst \
-    > ./debian/${CODENAME_SAFE}-gnome-livesettings.postinst
+    ./debtemplate/settings.prerm \
+    > ./debian/${CODENAME_SAFE}-gnome-settings.prerm
+
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
