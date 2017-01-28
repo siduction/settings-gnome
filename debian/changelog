@@ -1,8 +1,8 @@
-patience-gnome-settings (2016.1.0-3) unstable; urgency=medium
+patience-gnome-settings (2016.1.0-4) unstable; urgency=medium
 
   * killed applications in postinst
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 28 Jan 2017 12:53:41 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sat, 28 Jan 2017 13:10:37 +0100
 
 patience-gnome-settings (2016.1.0-2) unstable; urgency=medium
 
