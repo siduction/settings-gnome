@@ -16,8 +16,6 @@ case "$1" in
         cp -af /usr/share/@CODENAME_SAFE@-gnome-settings/etc/skel/gitignore     /etc/skel/.gitignore
         ## xdg ##
         cp -af /usr/share/@CODENAME_SAFE@-gnome-settings/etc/xdg                /etc
-        ## applications ##
-        cp -af /usr/share/@CODENAME_SAFE@-gnome-settings/usr/share/applications /usr/share
         ## configure ##
         glib-compile-schemas /usr/share/glib-2.0/schemas/
     ;;
