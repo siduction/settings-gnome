@@ -22,7 +22,6 @@ Description: @DISPLAY@ settings in installed mode
 Package: @CODENAME_SAFE@-@FLAVOUR@-livesettings
 Architecture: all
 Depends: ${misc:Depends},
-         sidu-installer (>= 2014.01.10),
          siduction-icons,
          @CODENAME_SAFE@-@FLAVOUR@-artwork,
          @CODENAME_SAFE@-@FLAVOUR@-settings,
