@@ -1,3 +1,9 @@
+patience-gnome-settings (2016.1.0-5) unstable; urgency=medium
+
+  * removed sidu-installer dependency 
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 28 Jan 2017 22:13:40 +0100
+
 patience-gnome-settings (2016.1.0-4) unstable; urgency=medium
 
   * killed applications in postinst

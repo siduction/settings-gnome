@@ -22,7 +22,6 @@ Description: GNOME settings in installed mode
 Package: patience-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
-         sidu-installer (>= 2014.01.10),
          siduction-icons,
          patience-gnome-artwork,
          patience-gnome-settings,
