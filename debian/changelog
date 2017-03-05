@@ -1,3 +1,9 @@
+patience-gnome-settings (2017.1.0-1) unstable; urgency=medium
+
+  * release branding
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 05 Mar 2017 17:46:20 +0100
+
 patience-gnome-settings (2016.1.0-5) unstable; urgency=medium
 
   * removed sidu-installer dependency 
