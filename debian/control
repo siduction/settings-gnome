@@ -4,9 +4,9 @@ Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
 Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
-Build-Depends: debhelper (>= 9),
+Build-Depends: debhelper (>= 10),
                dh-systemd
-Standards-Version: 3.9.8
+Standards-Version: 4.1.2
 Homepage: https://git.siduction.org/extra/settings-gnome
 Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
 Vcs-Browser: https://git.siduction.org/extra/settings-gnome.git
@@ -15,6 +15,8 @@ Vcs-Browser: https://git.siduction.org/extra/settings-gnome.git
 Package: patience-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
+         patience-gnome-artwork,
+         patience-sddm-settings | patience-lightdm-gtk-settings | patience-gdm3-settings,
          patience-common-settings
 Description: GNOME settings in installed mode
  Pushes GNOME overrides schemas in installed mode

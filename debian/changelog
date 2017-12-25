@@ -1,3 +1,11 @@
+patience-gnome-settings (2017.2.0-1) unstable; urgency=medium
+
+  * Bumped VERSION
+  * Bumped Standards and compat
+  * fixed some dependencies
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 25 Dec 2017 16:19:31 +0100
+
 patience-gnome-settings (2017.1.0-1) unstable; urgency=medium
 
   * release branding
