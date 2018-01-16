@@ -1,33 +1,34 @@
-Source: @CODENAME_SAFE@-@FLAVOUR@-settings
+Source: @CODENAME_SAFE@-gnome-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
 Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
-Build-Depends: debhelper (>= 9),
+Build-Depends: debhelper (>= 11),
                dh-systemd
-Standards-Version: 3.9.8
-Homepage: https://git.siduction.org/extra/settings-@FLAVOUR@
-Vcs-Git: https://git.siduction.org/extra/settings-@FLAVOUR@.git
-Vcs-Browser: https://git.siduction.org/extra/settings-@FLAVOUR@.git
+Standards-Version: 4.1.3
+Homepage: https://git.siduction.org/extra/settings-gnome
+Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
+Vcs-Browser: https://git.siduction.org/extra/settings-gnome.git
 
-# @FLAVOUR@ Settings
-Package: @CODENAME_SAFE@-@FLAVOUR@-settings
+Package: @CODENAME_SAFE@-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
+         @CODENAME_SAFE@-gnome-artwork,
+         @CODENAME_SAFE@-sddm-settings | @CODENAME_SAFE@-lightdm-gtk-settings | @CODENAME_SAFE@-gdm3-settings,
          @CODENAME_SAFE@-common-settings
-Description: @DISPLAY@ settings in installed mode
- Pushes @DISPLAY@ overrides schemas in installed mode
+Description: Gnome settings (installed mode)
+ Siduction settings for Gnome in installed mode
 
-Package: @CODENAME_SAFE@-@FLAVOUR@-livesettings
+Package: @CODENAME_SAFE@-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         @CODENAME_SAFE@-@FLAVOUR@-artwork,
-         @CODENAME_SAFE@-@FLAVOUR@-settings,
+         @CODENAME_SAFE@-gnome-artwork,
+         @CODENAME_SAFE@-gnome-settings,
          @CODENAME_SAFE@-common-livesettings,
          @CODENAME_SAFE@-sddm-livesettings
          | @CODENAME_SAFE@-ligthdm-gtk-livesettings
          | @CODENAME_SAFE@-gdm3-livesettings
-Description: @DISPLAY@ settings in live mode
- Pushes @DISPLAY@ overrides schemas in live mode
+Description: Gnome settings in live mode
+ Pushes Gnome overrides schemas in live mode

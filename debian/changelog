@@ -1,4 +1,4 @@
-@CODENAME_SAFE@-@FLAVOUR@-settings (@VERSION@) @DISTRIBUTION@; urgency=medium
+@CODENAME_SAFE@-gnome-settings (@VERSION@) @DISTRIBUTION@; urgency=medium
 
   * Initial Release.
 
