@@ -19,32 +19,32 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     > ./debian/copyright
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    ../template/${CODENAME_SAFE}-gnome-settings.install \
+    ../template/debian/${CODENAME_SAFE}-gnome-settings.install \
     > ./debian/${CODENAME_SAFE}-gnome-settings.install
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    ../template/${CODENAME_SAFE}-gnome-settings.postinst \
+    ../template/debian/${CODENAME_SAFE}-gnome-settings.postinst \
     > ./debian/${CODENAME_SAFE}-gnome-settings.postinst
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    ../template/${CODENAME_SAFE}-gnome-livesettings.install \
+    ../template/debian/${CODENAME_SAFE}-gnome-livesettings.install \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.install
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    ../template/${CODENAME_SAFE}-gnome-livesettings.lintian-overrides \
+    ../template/debian/${CODENAME_SAFE}-gnome-livesettings.lintian-overrides \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.lintian-overrides
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    ../template/${CODENAME_SAFE}-gnome-livesettings.preinst \
+    ../template/debian/${CODENAME_SAFE}-gnome-livesettings.preinst \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.preinst
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    ../template/${CODENAME_SAFE}-gnome-settings.prerm \
+    ../template/debian/${CODENAME_SAFE}-gnome-settings.prerm \
     > ./debian/${CODENAME_SAFE}-gnome-settings.prerm
 
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    ../template/${CODENAME_SAFE}-gnome-livesettings.service \
+    ../template/debian/${CODENAME_SAFE}-gnome-livesettings.service \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.service
 
 ## templating
