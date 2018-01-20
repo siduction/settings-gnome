@@ -1,3 +1,9 @@
+patience-gnome-settings (2018.1.0-3) unstable; urgency=medium
+
+  * refactored and re-bootstrapped
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 20 Jan 2018 19:25:46 +0100
+
 patience-gnome-settings (2018.1.0-2) unstable; urgency=medium
 
   * fixed grub default 
