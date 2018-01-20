@@ -2,7 +2,7 @@
 set -e
 
 
-source ./functions.sh
+[ -e ../template/zfunctions.sh ] && source ../template/zfunctions.sh
 
 source_version_info
 debian_changelog
@@ -15,77 +15,60 @@ debian_rules
 # debian
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
-    ./debtemplate/copyright \
+    ../template/debian/copyright \
     > ./debian/copyright
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/get-template \
-    > ./debian/get-template
-chmod 755 ./debian/get-template
-
-
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/settings.install \
+    ../template/${CODENAME_SAFE}-gnome-settings.install \
     > ./debian/${CODENAME_SAFE}-gnome-settings.install
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/settings.postinst \
+    ../template/${CODENAME_SAFE}-gnome-settings.postinst \
     > ./debian/${CODENAME_SAFE}-gnome-settings.postinst
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/livesettings.install \
+    ../template/${CODENAME_SAFE}-gnome-livesettings.install \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.install
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/livesettings.lintian-overrides \
+    ../template/${CODENAME_SAFE}-gnome-livesettings.lintian-overrides \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.lintian-overrides
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/livesettings.preinst \
+    ../template/${CODENAME_SAFE}-gnome-livesettings.preinst \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.preinst
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/settings.prerm \
+    ../template/${CODENAME_SAFE}-gnome-settings.prerm \
     > ./debian/${CODENAME_SAFE}-gnome-settings.prerm
 
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./debtemplate/livesettings.service \
+    ../template/${CODENAME_SAFE}-gnome-livesettings.service \
     > ./debian/${CODENAME_SAFE}-gnome-livesettings.service
 
 ## templating
 
 [ -d ./etc ] && rm -rf ./etc
 [ -d ./usr ] && rm -rf ./usr
-cp -r ./template/* .
+cp -r ../template/etc .
+cp -r ../template/usr .
+
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./template/automount-open.desktop \
+    ../template/automount-open.desktop \
     > ./automount-open.desktop
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./template/usr/share/gnome-background-properties/siduction.xml \
+    ../template/usr/share/gnome-background-properties/siduction.xml \
     > ./usr/share/gnome-background-properties/siduction.xml
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./template/usr/share/glib-2.0/schemas/installed/90_org.gnome.desktop.background.gschema.override \
+    ../template/usr/share/glib-2.0/schemas/installed/90_org.gnome.desktop.background.gschema.override \
     > ./usr/share/glib-2.0/schemas/installed/90_org.gnome.desktop.background.gschema.override
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./template/usr/share/glib-2.0/schemas/installed/90_org.gnome.desktop.screensaver.wallpaper.gschema.override \
+    ../template/usr/share/glib-2.0/schemas/installed/90_org.gnome.desktop.screensaver.wallpaper.gschema.override \
     > ./usr/share/glib-2.0/schemas/installed/90_org.gnome.desktop.screensaver.wallpaper.gschema.override
 
 
