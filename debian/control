@@ -16,8 +16,8 @@ Depends: ${misc:Depends},
          @CODENAME_SAFE@-gnome-artwork,
          @CODENAME_SAFE@-sddm-settings | @CODENAME_SAFE@-lightdm-gtk-settings | @CODENAME_SAFE@-gdm3-settings,
          @CODENAME_SAFE@-common-settings
-Description: Gnome settings (installed mode)
- Siduction settings for Gnome in installed mode
+Description: GNOME settings (installed mode)
+ Siduction settings for GNOME in installed mode
 
 Package: @CODENAME_SAFE@-gnome-livesettings
 Architecture: all
@@ -29,5 +29,5 @@ Depends: ${misc:Depends},
          @CODENAME_SAFE@-sddm-livesettings
          | @CODENAME_SAFE@-ligthdm-gtk-livesettings
          | @CODENAME_SAFE@-gdm3-livesettings
-Description: Gnome settings in live mode
- Pushes Gnome overrides schemas in live mode
+Description: GNOME settings in live mode
+ Pushes GNOME overrides schemas in live mode

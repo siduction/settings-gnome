@@ -1,5 +1,5 @@
 [Unit]
-Description=Gnome cheatcodes in live media
+Description=GNOME cheatcodes in live media
 ConditionPathExists=/usr/share/@CODENAME_SAFE@-gnome-livesettings/
 After=@CODENAME_SAFE@-common-livesettings.service
 
