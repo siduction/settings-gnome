@@ -1,3 +1,9 @@
+patience-gnome-settings (2018.1.0-4) unstable; urgency=medium
+
+  * fixed some typos and re-bootstrapped 
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 21 Jan 2018 16:04:58 +0100
+
 patience-gnome-settings (2018.1.0-3) unstable; urgency=medium
 
   * refactored and re-bootstrapped
