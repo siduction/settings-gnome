@@ -16,8 +16,8 @@ Depends: ${misc:Depends},
          patience-gnome-artwork,
          patience-sddm-settings | patience-lightdm-gtk-settings | patience-gdm3-settings,
          patience-common-settings
-Description: Gnome settings (installed mode)
- Siduction settings for Gnome in installed mode
+Description: GNOME settings (installed mode)
+ Siduction settings for GNOME in installed mode
 
 Package: patience-gnome-livesettings
 Architecture: all
@@ -29,5 +29,5 @@ Depends: ${misc:Depends},
          patience-sddm-livesettings
          | patience-ligthdm-gtk-livesettings
          | patience-gdm3-livesettings
-Description: Gnome settings in live mode
- Pushes Gnome overrides schemas in live mode
+Description: GNOME settings in live mode
+ Pushes GNOME overrides schemas in live mode
