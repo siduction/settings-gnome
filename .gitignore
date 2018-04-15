@@ -3,10 +3,8 @@
 *.save
 
 # ignored debian $foo
-/debian/thunderstruck-*/
 /debian/paintitblack-*/
 /debian/patience-*/
-/debian/whiteroom-*/
 
 /debian/files
 /debian/debhelper-build-stamp

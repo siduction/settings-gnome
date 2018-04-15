@@ -1,5 +1,5 @@
 [Unit]
-Description=Gnome cheatcodes in live media
+Description=GNOME cheatcodes in live media
 ConditionPathExists=/usr/share/paintitblack-gnome-livesettings/
 After=paintitblack-common-livesettings.service
 

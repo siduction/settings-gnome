@@ -4,25 +4,26 @@ Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
 Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
-Build-Depends: debhelper (>= 9),
-               dh-systemd
-Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.4
 Homepage: https://git.siduction.org/extra/settings-gnome
 Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
 Vcs-Browser: https://git.siduction.org/extra/settings-gnome.git
 
-# gnome Settings
 Package: paintitblack-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
+         paintitblack-gnome-artwork,
+         paintitblack-sddm-settings
+	 | paintitblack-lightdm-gtk-settings
+	 | paintitblack-gdm3-settings,
          paintitblack-common-settings
-Description: GNOME settings in installed mode
- Pushes GNOME overrides schemas in installed mode
+Description: GNOME settings (installed mode)
+ Siduction settings for GNOME in installed mode
 
 Package: paintitblack-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
-         sidu-installer (>= 2014.01.10),
          siduction-icons,
          paintitblack-gnome-artwork,
          paintitblack-gnome-settings,
