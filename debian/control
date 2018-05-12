@@ -6,9 +6,9 @@ Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
 Build-Depends: debhelper (>= 11)
 Standards-Version: 4.1.4
-Homepage: https://git.siduction.org/extra/settings-gnome
+Vcs-Browser: https://git.siduction.org/extra/settings-gnome
 Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
-Vcs-Browser: https://git.siduction.org/extra/settings-gnome.git
+Homepage: https://git.siduction.org/extra/settings-gnome
 
 Package: @CODENAME_SAFE@-gnome-settings
 Architecture: all
