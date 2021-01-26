@@ -1,0 +1,11 @@
+[Unit]
+Description=GNOME cheatcodes in live media
+ConditionPathExists=/usr/share/c-blues-gnome-livesettings/
+After=c-blues-common-livesettings.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/share/c-blues-gnome-livesettings/gnome-cheatcodes start
+
+[Install]
+WantedBy=graphical.target

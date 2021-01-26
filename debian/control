@@ -1,4 +1,4 @@
-Source: patience-gnome-settings
+Source: c-blues-gnome-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,26 +10,26 @@ Vcs-Browser: https://git.siduction.org/extra/settings-gnome
 Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
 Homepage: https://git.siduction.org/extra/settings-gnome
 
-Package: patience-gnome-settings
+Package: c-blues-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
-         patience-gnome-artwork,
-         patience-sddm-settings
-	 | patience-lightdm-gtk-settings
-	 | patience-gdm3-settings,
-         patience-common-settings
+         c-blues-gnome-artwork,
+         c-blues-sddm-settings
+	 | c-blues-lightdm-gtk-settings
+	 | c-blues-gdm3-settings,
+         c-blues-common-settings
 Description: GNOME settings (installed mode)
  Siduction settings for GNOME in installed mode
 
-Package: patience-gnome-livesettings
+Package: c-blues-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         patience-gnome-artwork,
-         patience-gnome-settings,
-         patience-common-livesettings,
-         patience-sddm-livesettings
-         | patience-ligthdm-gtk-livesettings
-         | patience-gdm3-livesettings
+         c-blues-gnome-artwork,
+         c-blues-gnome-settings,
+         c-blues-common-livesettings,
+         c-blues-sddm-livesettings
+         | c-blues-ligthdm-gtk-livesettings
+         | c-blues-gdm3-livesettings
 Description: GNOME settings in live mode
  Pushes GNOME overrides schemas in live mode
