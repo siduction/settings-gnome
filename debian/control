@@ -1,4 +1,4 @@
-Source: c-blues-gnome-settings
+Source: cblues-gnome-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,26 +10,26 @@ Vcs-Browser: https://git.siduction.org/extra/settings-gnome
 Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
 Homepage: https://git.siduction.org/extra/settings-gnome
 
-Package: c-blues-gnome-settings
+Package: cblues-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
-         c-blues-gnome-artwork,
-         c-blues-sddm-settings
-	 | c-blues-lightdm-gtk-settings
-	 | c-blues-gdm3-settings,
-         c-blues-common-settings
+         cblues-gnome-artwork,
+         cblues-sddm-settings
+	 | cblues-lightdm-gtk-settings
+	 | cblues-gdm3-settings,
+         cblues-common-settings
 Description: GNOME settings (installed mode)
  Siduction settings for GNOME in installed mode
 
-Package: c-blues-gnome-livesettings
+Package: cblues-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         c-blues-gnome-artwork,
-         c-blues-gnome-settings,
-         c-blues-common-livesettings,
-         c-blues-sddm-livesettings
-         | c-blues-ligthdm-gtk-livesettings
-         | c-blues-gdm3-livesettings
+         cblues-gnome-artwork,
+         cblues-gnome-settings,
+         cblues-common-livesettings,
+         cblues-sddm-livesettings
+         | cblues-ligthdm-gtk-livesettings
+         | cblues-gdm3-livesettings
 Description: GNOME settings in live mode
  Pushes GNOME overrides schemas in live mode
