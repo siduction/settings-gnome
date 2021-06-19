@@ -1,4 +1,4 @@
-Source: cblues-gnome-settings
+Source: farewell-gnome-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -6,30 +6,30 @@ Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
 Build-Depends: debhelper (>= 11)
 Standards-Version: 4.1.4
-Vcs-Browser: https://git.siduction.org/extra/settings-gnome
-Vcs-Git: https://git.siduction.org/extra/settings-gnome.git
-Homepage: https://git.siduction.org/extra/settings-gnome
+Vcs-Browser: https://github.com/siduction/settings-gnome
+Vcs-Git: https://github.com/siduction/settings-gnome
+Homepage: https://github.com/siduction/settings-gnome
 
-Package: cblues-gnome-settings
+Package: farewell-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
-         cblues-gnome-artwork,
-         cblues-sddm-settings
-	 | cblues-lightdm-gtk-settings
-	 | cblues-gdm3-settings,
-         cblues-common-settings
+         farewell-gnome-artwork,
+         farewell-sddm-settings
+	 | farewell-lightdm-gtk-settings
+	 | farewell-gdm3-settings,
+         farewell-common-settings
 Description: GNOME settings (installed mode)
  Siduction settings for GNOME in installed mode
 
-Package: cblues-gnome-livesettings
+Package: farewell-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         cblues-gnome-artwork,
-         cblues-gnome-settings,
-         cblues-common-livesettings,
-         cblues-sddm-livesettings
-         | cblues-ligthdm-gtk-livesettings
-         | cblues-gdm3-livesettings
+         farewell-gnome-artwork,
+         farewell-gnome-settings,
+         farewell-common-livesettings,
+         farewell-sddm-livesettings
+         | farewell-ligthdm-gtk-livesettings
+         | farewell-gdm3-livesettings
 Description: GNOME settings in live mode
  Pushes GNOME overrides schemas in live mode
