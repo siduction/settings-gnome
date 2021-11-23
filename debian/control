@@ -1,4 +1,4 @@
-Source: farewell-gnome-settings
+Source: 2021-03-gnome-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,26 +10,26 @@ Vcs-Browser: https://github.com/siduction/settings-gnome
 Vcs-Git: https://github.com/siduction/settings-gnome
 Homepage: https://github.com/siduction/settings-gnome
 
-Package: farewell-gnome-settings
+Package: 2021-03-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
-         farewell-gnome-artwork,
-         farewell-sddm-settings
-	 | farewell-lightdm-gtk-settings
-	 | farewell-gdm3-settings,
-         farewell-common-settings
+         2021-03-gnome-artwork,
+         2021-03-sddm-settings
+	 | 2021-03-lightdm-gtk-settings
+	 | 2021-03-gdm3-settings,
+         2021-03-common-settings
 Description: GNOME settings (installed mode)
  Siduction settings for GNOME in installed mode
 
-Package: farewell-gnome-livesettings
+Package: 2021-03-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         farewell-gnome-artwork,
-         farewell-gnome-settings,
-         farewell-common-livesettings,
-         farewell-sddm-livesettings
-         | farewell-ligthdm-gtk-livesettings
-         | farewell-gdm3-livesettings
+         2021-03-gnome-artwork,
+         2021-03-gnome-settings,
+         2021-03-common-livesettings,
+         2021-03-sddm-livesettings
+         | 2021-03-ligthdm-gtk-livesettings
+         | 2021-03-gdm3-livesettings
 Description: GNOME settings in live mode
  Pushes GNOME overrides schemas in live mode

@@ -1,0 +1,11 @@
+[Unit]
+Description=GNOME cheatcodes in live media
+ConditionPathExists=/usr/share/2021-03-gnome-livesettings/
+After=2021-03-common-livesettings.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/share/2021-03-gnome-livesettings/gnome-cheatcodes start
+
+[Install]
+WantedBy=graphical.target

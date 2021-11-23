@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Automount Open file
 Icon=
-Exec=/usr/share/farewell-gnome-settings/automount-open
+Exec=/usr/share/2021-03-gnome-settings/automount-open
 Terminal=false
 Type=Application
 Categories=Utility;
