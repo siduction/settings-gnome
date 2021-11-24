@@ -1,4 +1,4 @@
-Source: 2021-03-gnome-settings
+Source: wintersky-gnome-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,26 +10,26 @@ Vcs-Browser: https://github.com/siduction/settings-gnome
 Vcs-Git: https://github.com/siduction/settings-gnome
 Homepage: https://github.com/siduction/settings-gnome
 
-Package: 2021-03-gnome-settings
+Package: wintersky-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
-         2021-03-gnome-artwork,
-         2021-03-sddm-settings
-	 | 2021-03-lightdm-gtk-settings
-	 | 2021-03-gdm3-settings,
-         2021-03-common-settings
+         wintersky-gnome-artwork,
+         wintersky-sddm-settings
+	 | wintersky-lightdm-gtk-settings
+	 | wintersky-gdm3-settings,
+         wintersky-common-settings
 Description: GNOME settings (installed mode)
  Siduction settings for GNOME in installed mode
 
-Package: 2021-03-gnome-livesettings
+Package: wintersky-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         2021-03-gnome-artwork,
-         2021-03-gnome-settings,
-         2021-03-common-livesettings,
-         2021-03-sddm-livesettings
-         | 2021-03-ligthdm-gtk-livesettings
-         | 2021-03-gdm3-livesettings
+         wintersky-gnome-artwork,
+         wintersky-gnome-settings,
+         wintersky-common-livesettings,
+         wintersky-sddm-livesettings
+         | wintersky-ligthdm-gtk-livesettings
+         | wintersky-gdm3-livesettings
 Description: GNOME settings in live mode
  Pushes GNOME overrides schemas in live mode
