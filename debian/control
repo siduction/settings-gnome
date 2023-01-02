@@ -1,4 +1,4 @@
-Source: wintersky-gnome-settings
+Source: mow-gnome-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,26 +10,26 @@ Vcs-Browser: https://github.com/siduction/settings-gnome
 Vcs-Git: https://github.com/siduction/settings-gnome
 Homepage: https://github.com/siduction/settings-gnome
 
-Package: wintersky-gnome-settings
+Package: mow-gnome-settings
 Architecture: all
 Depends: ${misc:Depends},
-         wintersky-gnome-artwork,
-         wintersky-sddm-settings
-	 | wintersky-lightdm-gtk-settings
-	 | wintersky-gdm3-settings,
-         wintersky-common-settings
+         mow-gnome-artwork,
+         mow-sddm-settings
+	 | mow-lightdm-gtk-settings
+	 | mow-gdm3-settings,
+         mow-common-settings
 Description: GNOME settings (installed mode)
  Siduction settings for GNOME in installed mode
 
-Package: wintersky-gnome-livesettings
+Package: mow-gnome-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         wintersky-gnome-artwork,
-         wintersky-gnome-settings,
-         wintersky-common-livesettings,
-         wintersky-sddm-livesettings
-         | wintersky-ligthdm-gtk-livesettings
-         | wintersky-gdm3-livesettings
+         mow-gnome-artwork,
+         mow-gnome-settings,
+         mow-common-livesettings,
+         mow-sddm-livesettings
+         | mow-ligthdm-gtk-livesettings
+         | mow-gdm3-livesettings
 Description: GNOME settings in live mode
  Pushes GNOME overrides schemas in live mode
