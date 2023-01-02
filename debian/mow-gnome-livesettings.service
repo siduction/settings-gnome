@@ -1,0 +1,11 @@
+[Unit]
+Description=GNOME cheatcodes in live media
+ConditionPathExists=/usr/share/mow-gnome-livesettings/
+After=mow-common-livesettings.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/share/mow-gnome-livesettings/gnome-cheatcodes start
+
+[Install]
+WantedBy=graphical.target
